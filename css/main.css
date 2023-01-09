@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  box-sizing: border-box; }
+
+.gral-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; }
+  .gral-container .sedan {
+    background-color: #e38826;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px 0 0 10px; }
+    .gral-container .sedan img {
+      width: 70px;
+      margin: 40px 0 0 40px; }
+    .gral-container .sedan h3 {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 40px;
+      color: #f2f2f2;
+      margin: 30px 0 0 40px; }
+    .gral-container .sedan p {
+      font-family: 'Lexend Deca', sans-serif;
+      color: #f2f2f2;
+      margin: 30px 0 0 40px;
+      width: 200px;
+      line-height: 26px; }
+    .gral-container .sedan button {
+      background-color: #f2f2f2;
+      width: 150px;
+      height: 40px;
+      margin: 80px 0 0 40px;
+      border: none;
+      border-radius: 20px;
+      font-family: 'Lexend Deca', sans-serif;
+      color: #e38826;
+      cursor: pointer; }
+    .gral-container .sedan button:hover {
+      border: 2px solid rgba(255, 255, 255, 0.75);
+      background-color: #e38826;
+      color: rgba(255, 255, 255, 0.75);
+      transition: 0.3s; }
+  .gral-container .suvs {
+    background-color: #006970;
+    width: 300px;
+    height: 500px; }
+    .gral-container .suvs img {
+      width: 70px;
+      margin: 40px 0 0 40px; }
+    .gral-container .suvs h3 {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 40px;
+      color: #f2f2f2;
+      margin: 30px 0 0 40px; }
+    .gral-container .suvs p {
+      font-family: 'Lexend Deca', sans-serif;
+      color: #f2f2f2;
+      margin: 30px 0 0 40px;
+      width: 200px;
+      line-height: 26px; }
+    .gral-container .suvs button {
+      background-color: #f2f2f2;
+      width: 150px;
+      height: 40px;
+      margin: 80px 0 0 40px;
+      border: none;
+      border-radius: 20px;
+      font-family: 'Lexend Deca', sans-serif;
+      color: #006970;
+      cursor: pointer; }
+    .gral-container .suvs button:hover {
+      border: 2px solid rgba(255, 255, 255, 0.75);
+      background-color: #006970;
+      color: rgba(255, 255, 255, 0.75);
+      transition: 0.3s; }
+  .gral-container .luxury {
+    background-color: #004241;
+    width: 300px;
+    height: 500px;
+    border-radius: 0 10px 10px 0; }
+    .gral-container .luxury img {
+      width: 70px;
+      margin: 40px 0 0 40px; }
+    .gral-container .luxury h3 {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 40px;
+      color: #f2f2f2;
+      margin: 30px 0 0 40px; }
+    .gral-container .luxury p {
+      font-family: 'Lexend Deca', sans-serif;
+      color: #f2f2f2;
+      margin: 30px 0 0 40px;
+      width: 200px;
+      line-height: 26px; }
+    .gral-container .luxury button {
+      background-color: #f2f2f2;
+      width: 150px;
+      height: 40px;
+      margin: 80px 0 0 40px;
+      border: none;
+      border-radius: 20px;
+      font-family: 'Lexend Deca', sans-serif;
+      color: #004241;
+      cursor: pointer; }
+    .gral-container .luxury button:hover {
+      border: 2px solid rgba(255, 255, 255, 0.75);
+      background-color: #004241;
+      color: rgba(255, 255, 255, 0.75);
+      transition: 0.3s; }
+
+footer .attributtion {
+  margin-top: 40px;
+  font-size: 11px;
+  text-align: center; }
+  footer .attributtion a {
+    color: #3e52a3; }
+
+/* ==== MOBILE ==== */
+@media (min-width: 300px) and (max-width: 600px) {
+  .gral-container {
+    flex-direction: column;
+    align-items: center; }
+    .gral-container .sedan {
+      border-radius: 10px 10px 0 0; }
+    .gral-container .luxury {
+      border-radius: 0 0 10px 10px; } }

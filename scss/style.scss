@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Transparent-white: hsla(0, 0%, 100%, 0.75); //(paragraphs)
+$Verylight-gray: hsl(0, 0%, 95%); //(background, headings, buttons):
+// font-family: 'Big Shoulders Display', cursive;
+// font-family: 'Lexend Deca', sans-serif;
+* {margin: 0; padding: 0; font-size: 15px; box-sizing: border-box;}
+.gral-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    .sedan {
+        background-color: $Bright-orange;
+        width: 300px;
+        height: 500px;
+        border-radius: 10px 0 0 10px;
+        img {
+            width: 70px;
+            margin: 40px 0 0 40px;
+        }
+        h3 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 40px;
+            color: $Verylight-gray;
+            margin:30px 0 0 40px;
+        }
+        p {
+            font-family: 'Lexend Deca', sans-serif;
+            color: $Verylight-gray;
+            margin: 30px 0 0 40px;
+            width: 200px;
+            line-height: 26px;
+        }
+        button {
+            background-color: $Verylight-gray;
+            width: 150px;
+            height: 40px;
+            margin: 80px 0 0 40px;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Lexend Deca', sans-serif;
+            color: $Bright-orange; 
+            cursor: pointer;
+        }
+        button:hover {
+            border: 2px solid $Transparent-white;
+            background-color: $Bright-orange;
+            color: $Transparent-white;
+            transition: 0.3s;
+        }
+    }
+    .suvs {
+        background-color: $Dark-cyan;
+        width: 300px;
+        height: 500px;
+        img {
+            width: 70px;
+            margin: 40px 0 0 40px;
+        }
+        h3 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 40px;
+            color: $Verylight-gray;
+            margin:30px 0 0 40px;
+        }
+        p {
+            font-family: 'Lexend Deca', sans-serif;
+            color: $Verylight-gray;
+            margin: 30px 0 0 40px;
+            width: 200px;
+            line-height: 26px;
+        }
+        button {
+            background-color: $Verylight-gray;
+            width: 150px;
+            height: 40px;
+            margin: 80px 0 0 40px;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Lexend Deca', sans-serif;
+            color: $Dark-cyan;
+            cursor: pointer; 
+        }
+        button:hover {
+            border: 2px solid $Transparent-white;
+            background-color: $Dark-cyan;
+            color: $Transparent-white;
+            transition: 0.3s;
+        }
+    }
+    .luxury {
+        background-color: $Very-dark-cyan;
+        width: 300px;
+        height: 500px;
+        border-radius: 0 10px 10px 0;
+        img {
+            width: 70px;
+            margin: 40px 0 0 40px;
+        }
+        h3 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 40px;
+            color: $Verylight-gray;
+            margin:30px 0 0 40px;
+        }
+        p {
+            font-family: 'Lexend Deca', sans-serif;
+            color: $Verylight-gray;
+            margin: 30px 0 0 40px;
+            width: 200px;
+            line-height: 26px;
+        }
+        button {
+            background-color: $Verylight-gray;
+            width: 150px;
+            height: 40px;
+            margin: 80px 0 0 40px;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Lexend Deca', sans-serif;
+            color: $Very-dark-cyan; 
+            cursor: pointer;
+        }
+        button:hover {
+            border: 2px solid $Transparent-white;
+            background-color: $Very-dark-cyan;
+            color: $Transparent-white;
+            transition: 0.3s;
+        }
+    }
+}
+footer {
+    .attributtion { margin-top: 40px;font-size: 11px; text-align: center; a {color: hsl(228, 45%, 44%);}}
+}
+/* ==== MOBILE ==== */
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .gral-container {
+        flex-direction: column;
+        align-items: center;
+        .sedan {
+            border-radius: 10px 10px 0 0;
+        }
+        .luxury {
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}
